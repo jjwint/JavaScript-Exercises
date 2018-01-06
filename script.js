@@ -8,6 +8,24 @@ for (var i=0; i<=num; i++) {
 
 console.log(total);
 
+//Exercise 2	
+
+var play = prompt("Do you want to play?");
+var wordString = "";
+
+if(play === "no"){
+	console.log("You didn't want to play.");
+} else if (play === "yes") {
+	do {
+		var word = prompt("Enter a word.");
+		var playAgain = prompt("Would you like to play again?");
+		wordString = wordString + " " + word;
+	} while (playAgain === "yes")
+	if(playAgain === "no") {
+		console.log(wordString);
+	} 
+}
+
 //Exercise 4
 var timeOfDay = prompt("Is it morning, noon, or evening?");
 
