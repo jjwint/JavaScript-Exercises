@@ -9,7 +9,6 @@ for (var i=0; i<=num; i++) {
 console.log(total);
 
 //Exercise 2	
-
 var play = prompt("Do you want to play?");
 var wordString = "";
 
@@ -25,6 +24,31 @@ if(play === "no"){
 		console.log(wordString);
 	} 
 }
+
+//Exercise 3
+var printName = prompt("Would you like to print your name?");
+
+var yourName = "Your name is ";
+
+if (printName === "yes") {
+	var name = prompt("What is your name?");
+	console.log(yourName + name);
+} else {
+	console.log("Maybe next time.");
+}
+
+var printAgain = prompt("Would you like to print this again?");
+
+var exPoint = "!";
+
+var message = yourName + name;
+
+while (printAgain === "yes") {
+	message = message + exPoint;
+	console.log(message);
+	printAgain = prompt("Would you like to print this again?");
+}
+
 
 //Exercise 4
 var timeOfDay = prompt("Is it morning, noon, or evening?");
